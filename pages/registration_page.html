@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,28 +11,52 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-
-    <div class="reg_wrapper">
-        <h1 class="reg_headitem">
-            Вхід:
-        </h1>
-        <footer>
-            <footer class="reg_footitem">
-                @ 2023 Біржа продажу автомобілей
-            </footer>
-        </footer>
-    </div>
-        <!-- <form method="get" target="_blank" action="https://fom.in.ua/echo">
-            <input type="text" name="Пошта" value= "" />
-            <ul class="login">Обов'язкове поле </ul>
-            <br><br>
-            <input type="password" name="password" value="" />
-            <ul class="login">Обов'язкове поле </ul>
-            <input type="submit" value="Submit">
-        </form>   -->
-</body>
-
-
-
-
-</html>
+    <body>
+        <header class="header_nav">
+            <div class="menu">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/registration_page.html" class="nav__link">
+                            Registration
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/autorisation_page.html" class="nav__link">
+                            Autorisation
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </header>
+        <form method="post" action="https://fom.in.ua/echo">
+           <fieldset>
+               <h1>Registration:</h1>
+           </br>
+              <p>
+                   <label>
+                       <input type="email" name="email" required="required" placeholder="user@domain.com">
+                   </label>
+              </p>
+           </br>
+              <p>
+                   <label>
+                       <input type="password" name="password" required="required" placeholder="password">
+                   </label>
+              </p>
+            </br>
+            <p>
+                 <label>
+                     <input type="password" name="confirm password" required="required" placeholder="confirm password">
+                 </label>
+            </p>
+           </br>
+              <input type="button" value="Submit">
+           </fieldset>
+        </form>
+   </body>
+   </html>

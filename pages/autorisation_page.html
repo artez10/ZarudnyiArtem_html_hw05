@@ -4,69 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: bold;
-        }
-
-        .form-group input[type="text"],
-        .form-group input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-
-        .btn-login {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Login</h2>
-        <form action="login.php" method="post">
-            <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit" class="btn-login">Login</button>
-        </form>
-    </div>
+    <header class="header_nav">
+        <div class="menu">
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="../index.html" class="nav__link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="../pages/registration_page.html" class="nav__link">
+                        Registration
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="../pages/autorisation_page.html" class="nav__link">
+                        Autorisation
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </header>
+     <form method="post" action="https://fom.in.ua/echo">
+        <fieldset>
+            <h1>Autorisation:</h1>
+        </br>
+           <p>
+                <label>
+                    <input type="email" name="email" required="required" placeholder="user@domain.com">
+                </label>
+           </p>
+        </br>
+           <p>
+                <label>
+                    <input type="password" name="password" required="required" placeholder="password">
+                </label>
+           </p>
+        </br>
+           <p>
+                <label>
+                    remember me:
+                    <input type="checkbox" name="remember" checked="checked" placeholder="remember me">
+                </label>
+           </p>
+        </br>
+           <input type="button" value="Submit">
+        </fieldset>
+     </form>
 </body>
 </html>
 
 
 
-<!-- це gpt -->
