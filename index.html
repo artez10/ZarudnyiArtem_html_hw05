@@ -11,30 +11,160 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="header_search">
-    <h1 class="header__heading">search menu</h1>
-  </header>
+  <header class="header_nav">
+    <div class="menu">
+        <ul class="nav">
+             <li class="nav__item">
+                <a href="./index.html" class="nav__link">
+                    Home
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="./pages/registration_page.html" class="nav__link">
+                    Registration
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="./pages/autorisation_page.html" class="nav__link">
+                    Autorisation
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+  <main class="main_search"> 
+        <form class="search" method="POST" action="https://fom.in.ua/echo">
+        <fieldset>
+            <div class="search_name">
+                <h1>Search Vehicle:</h1>
+            </div>
+        </br>
+            <p>
+                <label>
+                  Select Brand:
+                    <select name="selected_brand" required="required">
+                      <option value="Mercedes">Mercedes</option>
+                      <option value="Volkswagen">Volkswagen</option>
+                      <option value="BWM">Peugeot</option>
+                      <option value="Opel">Volvo</option>
+                      <option value="Toyota">Toyota</option>
+                      <option value="Honda">Honda</option>
+                    </select>
+                 </label>
+            </p>
+        </br>
+      <p>
+          <label>
+            First Registration:
+              <select name="register_year">
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+              </select>
+          </lable>
+      </p>
+    </br>
+      <p>
+        <label>
+          Car Conditon:
+          <select name="car_condition">
+            <option value="new">new</option>
+            <option value="used">used</option>
+          </select>
+        </lable>
+      </p>
+  </br>
+  <p>
+    <label>
+      Price range:
+        <select name="register_year">
+          <option value="2023">500$</option>
+          <option value="2022">1000$</option>
+          <option value="2021">1500$</option>
+          <option value="2020">2000$</option>
+          <option value="2019">2500$</option>
+          <option value="2018">3000$</option>
+          <option value="2017">3500$</option>
+          <option value="2016">4000$</option>
+          <option value="2015">5000$</option>
+          <option value="2014">5500$</option>
+          <option value="2013">6500$</option>
+          <option value="2012">7000$</option>
+          <option value="2011">7500$</option>
+          <option value="2010">8000$</option>
+          <option value="2009">8500$</option>
+          <option value="2008">9000$</option>
+          <option value="2007">9500$</option>
+          <option value="2006">10000$</option>
+          <option value="2005">20000$</option>
+          <option value="2004">30000$</option>
+          <option value="2003">40000$</option>
+          <option value="2002">50000$</option>
+          <option value="2001">60000$</option>
+          <option value="2000">70000$</option>
+        </select>
+    </lable>
+</p>
+<br>
+          <input type="button" name="show_results" value="Show Results" >
+        </fieldset>
+    </form>
+  </main>
   <article class="column">
-    <h2 class="column_heading">Article</h2>
-    <div class="column__block"></div>
-    <div class="column__block"></div>
-    <div class="column__block"></div>
-    <div class="column__block"></div>
-    <div class="column__block"></div>
-    <div class="column__block"></div>
-</article>
-<article class="row">
-      <h2 class="column_heading">Article</h2>
-    <div class="row__block"></div>
-    <div class="row__block"></div>
-    <div class="row__block"></div>
-    <div class="row__block"></div>
-    <div class="row__block"></div>
-    <div class="row__block"></div>
-    <div class="row__block"></div>
-    <div class="row__block"></div>
-    <div class="row__block"></div>
-    <div class="row__block"></div>
+    <h2 class="column_heading">Select Your Favourite Brand:</h2>
+    <div class="column-wrap">
+      <div class="column__block">
+        <div class="image-item">
+          <img src="./images/honda.svg" alt="honda_icon">
+        </div>
+      </div>
+      <div class="column__block">
+        <div class="image-item">
+          <img src="./images/mercedes benz.svg" alt="mercedes_icon">
+        </div>
+      </div>
+      <div class="column__block">
+        <div class="image-item">
+          <img src="./images/peugeot-alt.svg" alt="peugeot_icon">
+        </div>
+      </div>
+      <div class="column__block">
+        <div class="image-item">
+          <img src="./images/toyota.svg" alt="toyota_icon">
+        </div>
+      </div>
+      <div class="column__block">
+        <div class="image-item">
+          <img src="./images/volkswagen.svg" alt="volkswagen_icon">
+        </div>
+      </div>
+      <div class="column__block">
+        <div class="image-item">
+          <img src="./images/volvo.svg" alt="volvo_icon">
+        </div>
+      </div>
+    </div>
   </article>
 </body>
 </html>

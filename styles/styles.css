@@ -2,10 +2,10 @@
 body {
     background-color: #ef8cbd;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: #fff;
+    color: #ef8cbd;
 }
 
-.header_search {
+.main_search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,60 +19,46 @@ body {
     background-attachment: fixed;
 }
 
-.header__heading {
+.main__heading {
     font-size: 30vmin;
 }
 
 article.column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
     height: 100vh;
-    background-color: #ef8cbd;
+    background-color:#000;
+    /* background-color:#ef8cbd; */
 }
 
-.reg_wrapper {
-    background-color: #fff;
-    margin: 20px;
-    color: #000;
-    padding: 2%;
-    width: 35%;
-    position: absolute;
-    border: 1px solid #000;
-    border-radius: 2%;
-    
-}
-
-.reg_headitem {
-    font-weight: bold;
-    color: #ef8cbd;
-}
-
-.reg_footitem {
-    /* display: flex; */
-    padding-top: 100%;
-} 
-
- form {
-    position: absolute;
-    padding: 100px;
-    top: 50%;
-    left: 50%;
-    margin-top: -155px;
-    margin-left: -170px;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 10%;
+.column_heading {
     text-align: center;
 }
 
-.menu {
+.column-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.column__block {
+    background-color: #ef8cbd;
+    height: 50vh;
+    width: 33.33%;
+    transition: all 2.5s;
+}
+
+.column__block:hover {
+    background-color: #fff;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform:scale(1);
+    transition: all 5s;
+}
+
+.image-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    border: 2px solid black;
+    height: 25vw;
 }
 
 .nav {
@@ -91,4 +77,46 @@ article.column {
     color: #000;
 }
 
+.registration_name,
+.autorisation_name,
+.search_name {
+    color: #000;
+    font-size: 3vh;
+}
 
+ .regist, 
+ .autor,
+ .search {
+    position: absolute;
+    padding: 100px;
+    top: 50%;
+    left: 50%;
+    border: 2px solid black;
+    border-radius: 10%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.search { 
+    margin-top: -155px;
+    margin-left: -200px;
+}
+
+.regist, 
+.autor{
+    margin-top: -155px;
+    margin-left: -170px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.checkbox_text {
+    font-size: 16px;
+    color: #000;
+}

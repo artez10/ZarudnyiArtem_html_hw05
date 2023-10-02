@@ -11,52 +11,53 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <body>
-        <header class="header_nav">
-            <div class="menu">
-                <ul class="nav">
-                    <li class="nav__item">
-                        <a href="../index.html" class="nav__link">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../pages/registration_page.html" class="nav__link">
-                            Registration
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../pages/autorisation_page.html" class="nav__link">
-                            Autorisation
-                        </a>
-                    </li>
-                </ul>
+    <header class="header_nav">
+        <div class="menu">
+            <ul class="nav">
+                 <li class="nav__item">
+                    <a href="../index.html" class="nav__link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="../pages/registration_page.html" class="nav__link">
+                        Registration
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="../pages/autorisation_page.html" class="nav__link">
+                        Autorisation
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <form class="regist" method="post" action="https://fom.in.ua/echo">
+        <fieldset>
+            <div class="registration_name">
+                <h1>Registration:</h1>
             </div>
-            </header>
-        <form method="post" action="https://fom.in.ua/echo">
-           <fieldset>
-               <h1>Registration:</h1>
-           </br>
-              <p>
-                   <label>
-                       <input type="email" name="email" required="required" placeholder="user@domain.com">
-                   </label>
-              </p>
-           </br>
-              <p>
-                   <label>
-                       <input type="password" name="password" required="required" placeholder="password">
-                   </label>
-              </p>
-            </br>
+        </br>
             <p>
-                 <label>
-                     <input type="password" name="confirm password" required="required" placeholder="confirm password">
+                <label>
+                    <input type="email" name="email" required="required" placeholder="user@domain.com">
                  </label>
             </p>
-           </br>
-              <input type="button" value="Submit">
-           </fieldset>
-        </form>
-   </body>
-   </html>
+        </br>
+            <p>
+                <label>
+                    <input type="password" name="password" required="required" placeholder="password">
+                </label>
+            </p>
+        </br>
+        <p>
+                <label>
+                    <input type="password" name="confirm password" required="required" placeholder="confirm password">
+                </label>
+        </p>
+        </br>
+            <input type="button" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
