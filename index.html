@@ -53,7 +53,7 @@
                  </label>
             </p>
         </br>
-      <p>
+        <p>
           <label>
             First Registration:
               <select name="register_year">
@@ -87,14 +87,72 @@
     </br>
       <p>
         <label>
+          Body Type:
+          <select name="body_type">
+            <option value="sedan">sedan</option>
+            <option value="cabrio">cabrio</option>
+            <option value="van">van</option>
+            <option value="limo">limo</option>
+            <option value="truck">truck</option>
+            <option value="hatchback">hatchback</option>
+          </select>
+        </lable>
+      </p>
+    </br>
+      <p>
+        <label>
+          Fuel Type:
+          <select name="fuel_type">
+            <option value="petrol">petrol</option>
+            <option value="diesel">diesel</option>
+            <option value="lpg">lpg</option>
+            <option value="cng">cng</option>
+            <option value="ethanol">enthanol</option>
+            <option value="revo">revo</option>
+          </select>
+        </lable>
+      </p>
+    </br>
+      <p>
+        <label>
           Car Conditon:
           <select name="car_condition">
             <option value="new">new</option>
             <option value="used">used</option>
+            <option value="damaged">damaged</option>
+            <option value="on credit">on credit</option>
+            <option value="cleared">cleared</option>
+            <option value="uncleared">uncleared</option>
           </select>
         </lable>
       </p>
-  </br>
+    </br>
+      <p>
+        <label>
+          Color:
+          <select name="colors">
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="black">black</option>
+            <option value="white">white</option>
+            <option value="yellow">yellow</option>
+            <option value="green">green</option>
+          </select>
+        </lable>
+      </p>
+    </br>
+      <p>
+        <label>
+          Manufactured in:
+          <select name="manufactured_in">
+            <option value="Germany">Germany</option>
+            <option value="Japan">Japan</option>
+            <option value="Sweden">Sweden</option>
+            <option value="France">France</option>
+          </select>
+        </lable>
+      </p>
+    </br>
   <p>
     <label>
       Price range:
@@ -125,7 +183,7 @@
           <option value="2000">70000$</option>
         </select>
     </lable>
-</p>
+  </p>
 <br>
           <input type="button" name="show_results" value="Show Results" >
         </fieldset>
